@@ -1,0 +1,50 @@
+body {
+    text-align:top;
+    background-image: url("../images/movistar.png");
+
+    background-repeat:repeat-x repeat-y;
+
+}
+
+.imgs {
+    float: right;
+    margin: auto;
+    display: block;
+    width: 25%;
+}
+
+audio {
+    width: 0px;
+}
+
+  body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(26, 255, 0);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+  }
+
+.imga {
+    float: left;
+    margin: 200px;
+    display: block;
+    width: 25%;
+    -webkit-animation: 1s rotate linear infinite;
+    animation: 0.75s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    filter: drop-shadow(0px 0px 20px rgb(0, 255, 34));
+
+}
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}

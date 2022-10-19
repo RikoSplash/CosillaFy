@@ -1,0 +1,55 @@
+body {
+    text-align:center;
+    background-image: url("../images/fondo2.gif");
+    background-size: 100%;
+    background-repeat:repeat-x repeat-y;
+    background-position-x:center;
+    background-position-y:center;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 255, 81);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+  }
+
+audio {
+    border-radius: 1px;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 20%;
+}
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+
+.imgr {
+    -webkit-animation: 2s rotate linear infinite;
+    animation: 1.5s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    filter: drop-shadow(0px 0px 20px rgb(0, 255, 34));
+}
+
+audio {
+  width: 0px;
+}
+
+@media only screen and (max-width: 1080px) {
+  img {
+    width: 400px;
+  }
+}
